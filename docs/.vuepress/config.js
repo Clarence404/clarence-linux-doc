@@ -10,6 +10,7 @@ import 'dotenv/config';
 //   dropdown  → 分组下拉菜单
 // 本地：改 .env 文件即可；CI/CD：workflow env 里覆盖
 const NAVBAR_STYLE = process.env.NAVBAR_STYLE ?? 'dropdown';
+const SITE_BASE = '/clarence-linux-doc/';
 
 const navbarFlat = [
     {text: '开发总结',   link: '/interview/0_linux'},
@@ -104,9 +105,9 @@ function getSidebarFromDir(dirPath) {
 
 export default defineUserConfig({
     head: [
-        ['link', {rel: 'icon', href: 'images/logo.png'}]
+        ['link', {rel: 'icon', href: `${SITE_BASE}images/logo.png`}]
     ],
-    base: '/clarence-linux-doc/',
+    base: SITE_BASE,
     lang: 'zh-CN',
     port: 1001,
     title: 'Clarence Linux Doc',
