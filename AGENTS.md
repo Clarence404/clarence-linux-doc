@@ -1,7 +1,8 @@
 # clarence-linux-doc 知识库总览
 
-> Java 后端转嵌入式 Linux / 硬件方向的学习文档站，基于 VuePress 构建。
-> 定位：学习路线 + 实践笔记 + 开发总结，姊妹项目为 clarence-java-doc（Java 后端知识体系）。
+> Java 后端 → 嵌入式软件 → 嵌入式硬件，循序渐进的全链路学习文档站，基于 VuePress 构建。
+> 定位：Java 能力向下延伸而非换赛道——先做「懂硬件的软件工程师」（主线），再到「能做简单硬件」（延伸），
+> 终点是覆盖 PCB → 驱动 → 网关 → 云平台完整链路的工程师。姊妹项目为 clarence-java-doc（Java 后端知识体系）。
 
 ---
 
@@ -21,7 +22,9 @@ docs/
 ├── drivers/          驱动开发：字符设备 / platform 驱动 / 中断
 ├── kernel/           内核机制：启动流程 / 内存管理 / 进程调度
 ├── protocols/        工业协议：Modbus / CAN / MQTT
-├── gateway/          IoT 网关：网关架构 / 边缘计算 / 与 Java 后端集成
+├── gateway/          IoT 网关：网关架构 / 边缘计算 / 与 Java 后端集成 / 边缘 AI
+├── hardware/         嵌入式硬件：电路基础 / 模电数电 / 原理图 / 仪器 / PCB / 电源信号 / 传感器采集
+├── projects/         实战项目：MQTT 模拟器 / Modbus 网关 / IoT 平台 / AI 边缘网关 / PCB 到云端闭环
 └── debugging/        调试工具：gdb / strace & perf / 交叉调试
 ```
 
@@ -30,11 +33,20 @@ docs/
 ## 学习路线（目录即路线）
 
 ```
-第一阶段（地基）：  basics → shell → system
-第二阶段（核心）：  c-lang → sys-programming → network
-第三阶段（嵌入式）：embedded → peripherals
-第四阶段（进阶）：  drivers → kernel
-第五阶段（整合）：  protocols → gateway · debugging 贯穿全程
+大阶段一 · Java 后端（已有，沉淀在 clarence-java-doc）
+    衔接资产：网络编程 / 并发 / 协议 / MQTT / IoT 平台
+
+大阶段二 · 嵌入式软件（主线，本站核心）
+    地基：  basics → shell → system
+    核心：  c-lang → sys-programming → network
+    嵌入式：embedded → peripherals
+    进阶：  drivers → kernel
+    整合：  protocols → gateway · debugging 贯穿全程
+
+大阶段三 · 嵌入式硬件（延伸，从「懂」到「能做」）
+    hardware：电路基础 → 模电数电 → 原理图 → 仪器 → PCB → 电源信号 → 传感器采集
+
+项目驱动：projects 五个项目贯穿三大阶段，项目五（PCB 到云端闭环）为终极整合
 ```
 
 ---

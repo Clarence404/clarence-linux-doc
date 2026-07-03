@@ -26,6 +26,8 @@ const navbarFlat = [
     {text: '内核机制',   link: '/kernel/0_kernel_boot'},
     {text: '工业协议',   link: '/protocols/0_modbus'},
     {text: 'IoT 网关',   link: '/gateway/0_gateway_arch'},
+    {text: '嵌入式硬件', link: '/hardware/0_circuit_base'},
+    {text: '实战项目',   link: '/projects/0_mqtt_simulator'},
     {text: '调试工具',   link: '/debugging/0_gdb'},
 ];
 
@@ -69,6 +71,19 @@ const navbarDropdown = [
         ],
     },
     {
+        text: '嵌入式硬件',
+        children: [
+            {text: '电路基础',       link: '/hardware/0_circuit_base'},
+            {text: '模电与数电',     link: '/hardware/1_analog_digital'},
+            {text: '原理图',         link: '/hardware/2_schematic'},
+            {text: '仪器实战',       link: '/hardware/3_instruments'},
+            {text: 'PCB 设计',       link: '/hardware/4_pcb_design'},
+            {text: '电源与信号',     link: '/hardware/5_power_signal'},
+            {text: '传感器与采集',   link: '/hardware/6_sensor_adc'},
+        ],
+    },
+    {text: '实战项目', link: '/projects/0_mqtt_simulator'},
+    {
         text: '工程调试',
         children: [
             {text: '调试工具', link: '/debugging/0_gdb'},
@@ -111,7 +126,7 @@ export default defineUserConfig({
     lang: 'zh-CN',
     port: 1001,
     title: 'Clarence Linux Doc',
-    description: 'Java 后端转嵌入式 Linux / 硬件方向的学习知识库',
+    description: 'Java 后端 → 嵌入式软件 → 嵌入式硬件，循序渐进的全链路学习知识库',
     // 处理vite 打包警告
     bundler: viteBundler({
         viteOptions: {
@@ -143,6 +158,8 @@ export default defineUserConfig({
             '/kernel/':          getSidebarFromDir(path.resolve(__dirname, '../kernel')),
             '/protocols/':       getSidebarFromDir(path.resolve(__dirname, '../protocols')),
             '/gateway/':         getSidebarFromDir(path.resolve(__dirname, '../gateway')),
+            '/hardware/':        getSidebarFromDir(path.resolve(__dirname, '../hardware')),
+            '/projects/':        getSidebarFromDir(path.resolve(__dirname, '../projects')),
             '/debugging/':       getSidebarFromDir(path.resolve(__dirname, '../debugging')),
         },
         markdown: {

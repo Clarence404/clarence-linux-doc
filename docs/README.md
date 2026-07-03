@@ -4,7 +4,7 @@ title: 首页
 
 heroImage: /images/logo.png
 heroText: Clarence Linux Doc
-tagline: Java 后端 → 嵌入式 Linux / 硬件方向 · 学习路线与实践笔记
+tagline: Java 后端 → 嵌入式软件 → 嵌入式硬件 · 循序渐进的全链路转型路线
 heroFullScreen: true
 
 actions:
@@ -90,4 +90,48 @@ highlights:
         icon: bug
         details: gdb 调试 / strace & perf / 交叉调试与远程调试
         link: /debugging/0_gdb
+
+  - header: 延伸阶段 · 嵌入式硬件
+    description: 从「懂硬件」到「能做简单硬件」，带着软件阶段的问题来学
+    features:
+      - title: 电路与模数电
+        icon: bolt
+        details: 电路基础 / 三极管与运放 / 逻辑门，只学够用的
+        link: /hardware/0_circuit_base
+      - title: 原理图与仪器
+        icon: compass-drafting
+        details: 读懂开发板原理图 / 万用表 / 示波器 / 逻辑分析仪实战
+        link: /hardware/2_schematic
+      - title: PCB 设计入门
+        icon: microchip
+        details: 立创 EDA 画板 / 嘉立创打样，做一块自己的传感器采集板
+        link: /hardware/4_pcb_design
+      - title: 传感器与采集
+        icon: gauge
+        details: ADC / 运放调理 / 电能计量采样原理，从物理量到数字量
+        link: /hardware/6_sensor_adc
+
+  - header: 项目驱动 · 实战清单
+    description: 每个阶段配一个可写进简历的项目，学完即产出
+    features:
+      - title: 项目一 · MQTT 设备模拟器
+        icon: satellite-dish
+        details: 模拟设备 → EMQX → Spring Boot 接收平台，跑通设备到平台的第一条链路
+        link: /projects/0_mqtt_simulator
+      - title: 项目二 · Modbus 采集网关
+        icon: diagram-project
+        details: Modbus 设备 → RS485 → Linux 网关 → MQTT 上报，关键的嵌入式网关项目
+        link: /projects/1_modbus_gateway
+      - title: 项目三 · IoT 平台
+        icon: cloud
+        details: 类 ThingsBoard 简化版：设备管理 / 时序存储 / 告警规则 / Grafana 看板
+        link: /projects/2_iot_platform
+      - title: 项目四 · AI 边缘分析网关
+        icon: robot
+        details: 边缘数据过滤 / 断网缓存 / ONNX 异常检测 / 云端同步
+        link: /projects/3_edge_ai_gateway
+      - title: 项目五 · PCB 到云端全链路闭环
+        icon: infinity
+        details: 自制采集板 + 自写驱动 + 自建网关 + Java 平台，终极闭环项目
+        link: /projects/4_full_chain
 ---
