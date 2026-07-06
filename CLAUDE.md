@@ -10,7 +10,7 @@
 
 ```
 docs/
-├── overview/         体系总览（导读）：云·Linux·MCU·硬件四层对接体系 / Linux 与 MCU 区别
+├── overview/         体系总览（导读）：四层对接体系 / Linux 与 MCU 区别 / 行业分工地图
 ├── interview/        开发总结：Linux / C / 嵌入式高频问题汇总
 ├── basics/           Linux 基础：概述 / 文件系统 / 常用命令 / 文本三剑客
 ├── shell/            Shell：基础语法 / 脚本编程
