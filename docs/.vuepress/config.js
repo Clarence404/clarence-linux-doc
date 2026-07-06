@@ -137,7 +137,7 @@ export default defineUserConfig({
     base: SITE_BASE,
     lang: 'zh-CN',
     port: 1001,
-    title: 'Clarence Embedded Doc',
+    title: 'Embedded Doc',
     description: 'Java 后端 → 嵌入式软件 → 嵌入式硬件，循序渐进的全链路学习知识库',
     // 处理vite 打包警告
     bundler: viteBundler({

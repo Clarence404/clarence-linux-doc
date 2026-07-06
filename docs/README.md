@@ -3,7 +3,7 @@ home: true
 title: 首页
 
 heroImage: /images/logo.png
-heroText: Clarence Embedded Doc
+heroText: Embedded Doc
 tagline: Java 后端 → 嵌入式软件 → 嵌入式硬件 · 循序渐进的全链路转型路线
 heroFullScreen: true
 

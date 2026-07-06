@@ -2,7 +2,7 @@
 
 Java 后端 → 嵌入式软件 → 嵌入式硬件，循序渐进的全链路学习知识库，基于 [VuePress](https://v2.vuepress.vuejs.org/zh/) + [vuepress-theme-hope](https://theme-hope.vuejs.press/zh/) 构建。
 
-相关 Java 项目：[clarence-java-doc](../clarence-java-doc)（Java 后端知识体系）。
+相关 Java 项目：[java-doc](https://github.com/Clarence404/java-doc)（Java 后端知识体系）。
 
 ## 快速开始
 
